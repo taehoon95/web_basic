@@ -37,10 +37,7 @@ public class UserLoginServlet extends HttpServlet {
 		String phone = request.getParameter("user-phone");
 		String homep = request.getParameter("user-homep");
 		
-		out.print("<html>");
-		out.println("<head>");
-		out.println("</head>");
-		out.println("<body>");
+		
 		out.println("가입정보<br>");
 		out.println("id  " + id + "<br>");
 		
@@ -54,18 +51,7 @@ public class UserLoginServlet extends HttpServlet {
 		out.println("email " + mail + "<br>");
 		out.println("phone " + phone + "<br>");
 		out.println("homepage " + homep + "<br>");
-		out.println("</body>");
-		out.print("</html>");
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	}
 }

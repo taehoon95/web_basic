@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+div {
+	width: 200px;
+	height: 100px;
+	display: inline-block;
+	margin: 15px;
+	border: 2px solid;
+	border-radius: 20px;
+}
+
+.round {
+	width: 250px;
+	height: 300px;
+	margin: 20px;
+	display: inline-block;
+	border: 2px solid;
+	border-radius: 70px/40px;
+	border: 2px solid red;
+	border-radius: 20px;
+}
+
+#bg {
+	background: url('../images/bg.png') no-repeat;
+	background-size: cover;
+}
+
+.round1 {
+	border-top-left-radius: 100px 50px;
+}
+
+.round2 {
+	border-bottom-right-radius: 50% 30%;
+}
+
+.round3 {
+	border-top-right-radius: 50px;
+}
+
+.box1{
+	box-shadow: 2px -2px 5px 0px black;
+}
+
+.box2{
+	box-shadow: 5px 5px 15px 5px gray;
+}
+
+.y{
+	width: 100px;
+	height: 100px;
+	background : yellow;
+	border: 8px solid red;
+	border-radius: 50%;
+}

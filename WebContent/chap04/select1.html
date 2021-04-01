@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	container{
+		width : 600px;
+		margin : 0 auto;
+	}
+	li{
+		margin : 20px
+	}
+	ul{
+		list-style: none;
+	}
+	label.textarea{
+	width : 100px;
+	float : left;
+ }
+</style>
+</head>
+<body>
+<form action = "registerServlet2" method = "get">
+		<fieldset>
+		<legend>로그인 정보2</legend>
+		<ul>
+			<li>
+				<label for = "id">아이디</label>
+				<input type = "text" title = "아이디" name = "id" autofocus required>
+			</li>
+			<li>
+				<label for = "pass">비밀번호</label>
+				<input type = "password" title = "비밀번호" name = "pass" value = "1234" readonly>
+			</li>
+			<li>
+				<label>첨부파일<input type = "file"></label>
+			</li>
+			<li>
+				<label for = "color">색선택</label>
+				<input type = "color"  name = "color" value = "#00ff00">
+			</li>
+			<li>
+			<label class = "reg" for = "Class">학과 선택</label>
+			<select  id = "class" name = "Class" >
+				<optgroup label="공과대학">
+					<option value = "건축공학과">건축공학과</option>
+					<option value = "기계공학과">기계공학과</option>
+					<option value = "산업공학과">산업공학과</option>
+					<option value = "전기전자공학과">전기전자공학과</option>
+					<option value = "컴퓨터공학과" selected>컴퓨터공학과</option>
+					<option value = "화학공학과">화학공학과</option>
+				</optgroup>	
+				<optgroup label = "인문대학">
+					<option value = "사학과">사학과</option>
+					<option value = "어문학부">어문학부</option>
+					<option value = "철학">철학</option>					
+				</optgroup>
+			</select>
+			</li>
+			<li>
+				<label>수강과목 선택</label>
+				<input type = "text" id = "interest" list = "choices" name = "choices">
+				<datalist id = "choices">
+					<option  value = "grammer"  label = "문법"></option>
+					<option value = "voca" label = "어휘"></option>
+					<option value = "speaking" label = "회화"></option>
+					<option value = "listening" label = "리스닝"></option>
+					<option value = "news" label = "뉴스청취"></option>
+				</datalist>
+			</li>
+			<li>
+				<label class = "textarea">텍스트 영역</label>
+					<textarea name = "intro" cols = "60" rows = "5">
+					</textarea>
+			</li>
+		</ul>		
+		<button type = "submit" class = "subm">
+			<img src = "images/tick.png" alt = "">가입
+		</button>	
+	</fieldset>
+	<fieldset>
+		<legend>진행 상황(태그 , 미터)</legend>
+		<ul>
+			<li>
+				<label>10초 남음</label>
+				<progress value = "50" max = "60"></progress>
+			</li>
+			<li>
+				<label>진행률 30%</label>
+				<progress value = "30" max = "100"></progress>
+			</li>
+			<li>
+				<label>점유율 0.8</label>
+				<meter value = "0.8"></meter>
+			</li>
+			<li>
+				<label>사용량 64%</label>
+				<meter min="0" max="100" value="64"></meter>
+			</li>
+			<li>
+				<label>트래픽 초과</label>
+				<meter min = "1024" max = "10240" low = "2048" high = "8192" value = "9216"></meter>
+			</li>
+			<li>
+				<label>적절한 트래픽</label>
+				<meter value = "0.5" optimum = "0.8"></meter>
+			</li>
+		</ul>
+	</fieldset>
+	
+</form>
+</body>
+</html>

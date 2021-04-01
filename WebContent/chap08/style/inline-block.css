@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+span {
+	color: red;
+}
+
+div{
+	margin : 10px;
+}
+
+.box1 {
+	border-radius : 50%;
+	width: 400px;
+	height: 400px;
+	background-color: orange;
+}
+
+.box2 {
+	border-radius : 50%;
+	width: 500px;
+	height: 100px;
+	background-color: green;
+}
+
+.block img{
+	display: block;
+	margin : 10px;
+}

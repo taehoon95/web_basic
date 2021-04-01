@@ -25,30 +25,81 @@
 				<label for = "pass">비밀번호</label>
 				<input type = "password" title = "비밀번호" name = "pass">
 			</li>
+			<li>
+				<label for = "user-passConfirm">비밀번호 확인</label>
+				<input type = "password" id = "user-passConfirm" name = "user-passConfirm">
+			</li>
 		</ul>
 	</fieldset>
 	
 		<fieldset>
 		<legend>수강 분야(다수 선택 가능)</legend>
 		<ul>
-			<li><input type="checkbox" name="gubun" value="grm">문법</li>
-			<li><input type="checkbox" name="gubun" value="wr">작문</li>
-			<li><input type="checkbox" name="gubun" value="rd">독해</li>
+			<li>
+				<input type="checkbox" name="gubun" value="grm">문법
+				<input type="checkbox" name="gubun" value="wr">작문
+				<input type="checkbox" name="gubun" value="rd">독해
+			</li>
 		</ul>
 		</fieldset>
 		<fieldset>
 		<legend>수강 과목</legend>
+		<span>이 달에 신청할 과목을 선택하세요(1과목만 가능)</span>
 		<ul>
 			<li>
 				<label><input type="radio" name="subject" value="eng">영어회화</label>
-			</li>
-			<li>
 				<label><input type="radio" name="subject" value="ch">중국어회화</label>
-			</li>
-			<li>
 				<label><input type="radio" name="subject" value="jp">일어회화</label>
 			</li>
 		</ul>
+		</fieldset>
+		<fieldset>
+			<legend>등록 정보</legend>
+				<ul>
+					<li>
+						<label class = "reg" for = "member">참여인원<small>(최대10명)</small></label>
+						<input type = "number" name = "member" id = "member" value = "1" min = "0" max = "10" step = "1">
+					</li>
+					<li>
+						<label class = "reg" for = "stuffs">지원물품<small>(1인당 5개)</small></label>
+						<input type = "number" name = "stuffs" id = "stuffs" value = "1" min = "0" max = "50" step = "5">
+					</li>
+					<li>
+						<label class = "reg" for = "saits">희망 단계<small>(하,중,상)</small></label>
+						<input type = "range" name = "saits" id = "satis" value = "1" min = "1" max = "3">
+					</li>
+				</ul>
+		</fieldset>
+		<fieldset>
+			<legend>메일링</legend>
+			<span>메일로 받고 싶은 뉴스 주제를 선택해 주세요(복수 선택 가능)</span>
+			<ul>
+			<li>
+				<label><input type="checkbox" name="mailing" value="news">해외 단신</label>
+				<label><input type="checkbox" name="mailing" value="dialog">5분 회화</label>
+				<label><input type="checkbox" name="mailing" value="pops">모닝팝스</label>
+			</li>
+		</ul>
+		</fieldset>
+		<fieldset>
+			<legend>과티</legend>
+			<p>올해 과 티(T)를 만들려고 합니다. 원하는 색상을 추천해 주세요</p>
+			<label>선호색상<input type = "color" name = "color"value = "#00ff00"></label>
+		</fieldset>
+		<fieldset>
+			<legend>조회 기간</legend>
+			<label><input type = "date" name = "startDate" id = "start"></label>
+			<label><input type = "date" name = "endDate"  id = "end"></label>
+		</fieldset>
+		<fieldset>
+			<legend>대관시간을 선택하세요(오늘)</legend>
+			<label>시작 시간<input type = "time" value = "09:00" id = "start1" name = "start1"></label>
+			<label>종료 시간<input type = "time" value = "18:00" id = "end1" name = "end1"></label>
+		</fieldset>
+		<fieldset>
+			<legend>대관시간을 선택하세요(다른 날짜)</legend>
+			<label>시작 시간<input type = "datetime-local" value = "2021-03-24T09:00" id = "start2" name = "start2"></label>
+			<label>종료 시간<input type = "datetime-local" value = "2021-03-24T18:00" id = "end2" name = "end2"></label>
 		</fieldset>
 			<label><input type = "submit" value = "전송"></label>	
 	</form>
